@@ -1,0 +1,8 @@
+<title>Users - List</title>
+<h1>Titre des utilisateurs</h1>
+
+<ul>
+    {% for user in users_list %}
+    <li>{{user['first_name']}} {{user['last_name']}} </li>
+    {% endfor %}
+</ul>
