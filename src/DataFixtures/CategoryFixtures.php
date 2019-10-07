@@ -14,9 +14,9 @@ class CategoryFixtures extends Fixture
         // $manager->persist($product);
 
         // POO
-        $category = new Category();
-        $category->setShortname('POO');
-        $category->setLongname('Programmation Orientée Objet');
+        $category = new Category();                                 // 
+        $category->setShortname('POO');                             // Ajoute 'POO' au shortname
+        $category->setLongname('Programmation Orientée Objet');     // Ajoute la description dans le longname
         $manager->persist($category);
 
         // PHP
