@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DefaultController!{% endblock %}
+{% block title %}{% trans %}Hello DefaultController!{% endtrans %}{% endblock %}
 
 {% block body %}
 <style>
@@ -9,17 +9,17 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>{% trans %}Hello{% endtrans %} "{{ controller_name }}"! ✅</h1>
 
-    Liste des liens:
+    {% trans %}List of links:{% endtrans %}
     <ul>
-        <li>Liste Users : <a href='{{ url('user_index')}}'>{{ url('user_index')}}</a></li>
+        <li>{% trans %}List users : {% endtrans %}<a href='{{ url('user_index')}}'>{{ url('user_index')}}</a></li>
     </ul>
 
 
 
 </div>
 
-<button class="btn btn-primary">Se connecter</button>
+<button class="btn btn-primary">{{ 'Log in'|trans }}</button>
 
 {% endblock %}

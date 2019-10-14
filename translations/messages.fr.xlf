@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="awzJBNC" resname="Users">
+        <source>Users</source>
+        <target>Utilisateurs</target>
+      </trans-unit>
+      <trans-unit id="KSwG8AR" resname="Category">
+        <source>Category</source>
+        <target>Catégorie</target>
+      </trans-unit>
+      <trans-unit id="zI.Z63_" resname="Welcome!">
+        <source>Welcome!</source>
+        <target>Bienvenu !</target>
+      </trans-unit>
+      <trans-unit id="xfxRCVx" resname="Hello DefaultController!">
+        <source>Hello DefaultController!</source>
+        <target>Salut Controlleur par default !</target>
+      </trans-unit>
+      <trans-unit id="GF_NsyJ" resname="Hello">
+        <source>Hello</source>
+        <target>Salut</target>
+      </trans-unit>
+      <trans-unit id="YsJ37y8" resname="List of links:">
+        <source>List of links:</source>
+        <target>Liste des liens:</target>
+      </trans-unit>
+      <trans-unit id="trw6rHx" resname="List users :">
+        <source>List users :</source>
+        <target>liste utilisateurs :</target>
+      </trans-unit>
+      <trans-unit id="wYmEDPf" resname="Log in">
+        <source>Log in</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="UAk9xDP" resname="Users - List">
+        <source>Users - List</source>
+        <target>Utilisateur - Liste</target>
+      </trans-unit>
+      <trans-unit id="AJrrmau" resname="All users :">
+        <source>All users :</source>
+        <target>Tout les utilisateurs :</target>
+      </trans-unit>
+      <trans-unit id="ScJmuqq" resname="Search">
+        <source>Search</source>
+        <target>Rechercher</target>
+      </trans-unit>
+      <trans-unit id="EhVukhv" resname="Id">
+        <source>Id</source>
+        <target>Id</target>
+      </trans-unit>
+      <trans-unit id="JDGJ6tc" resname="Shortname">
+        <source>Shortname</source>
+        <target>Nom court</target>
+      </trans-unit>
+      <trans-unit id="9iiazAv" resname="Longname">
+        <source>Longname</source>
+        <target>Nom long</target>
+      </trans-unit>
+      <trans-unit id="Kw3N1AA" resname="actions">
+        <source>actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="xo05DSt" resname="Category index">
+        <source>Category index</source>
+        <target>Liste des catégories</target>
+      </trans-unit>
+      <trans-unit id="D5lam8." resname="no records found">
+        <source>no records found</source>
+        <target>Rien à afficher</target>
+      </trans-unit>
+      <trans-unit id="DZO3ehf" resname="Edit Category">
+        <source>Edit Category</source>
+        <target>Edition de la catégorie</target>
+      </trans-unit>
+      <trans-unit id="Ogh45Pp" resname="New Category">
+        <source>New Category</source>
+        <target>Nouvelle catégorie</target>
+      </trans-unit>
+      <trans-unit id="DF7HItc" resname="Create New Category">
+        <source>Create New Category</source>
+        <target>Créer une nouvelle catégorie</target>
+      </trans-unit>
+      <trans-unit id="REE8PZe" resname="Are you sure you want to delete this item?">
+        <source>Are you sure you want to delete this item?</source>
+        <target>Êtes-vous sur de vouloir supprimer cette objet ?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
