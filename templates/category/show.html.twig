@@ -24,7 +24,7 @@
 
     <div class="btn-group" role="group" aria-label="Basic example">
     <a class="btn btn-primary" href="{{ path('category_index') }}"><i class="fas fa-reply"></i></a>
-    <a class="btn btn-warning" href="{{ path('category_edit', {'id': category.id}) }}"><i class="fas fa-pen"></i></a>
-    {{ include('category/_delete_form.html.twig') }}
+    {% if is_granted('ROLE_ADMIN') %}<a class="btn btn-warning" href="{{ path('category_edit', {'id': category.id}) }}"><i class="fas fa-pen"></i></a>{% endif %}
+    {% if is_granted('ROLE_SUPER_ADMIN') %}{{ include('category/_delete_form.html.twig') }}{% endif %}
     </div>
 {% endblock %}
