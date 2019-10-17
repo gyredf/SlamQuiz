@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'User'|trans}}{% endblock %}
+
+{% block body %}
+    <h1>{{'User'|trans}}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>{{'Id'|trans}}</th>
+                <td>{{ user.id }}</td>
+            </tr>
+            <tr>
+                <th>{{'Email'|trans}}</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th>{{'Roles'|trans}}</th>
+                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+            </tr>
+            <tr>
+                <th>{{'Password'|trans}}</th>
+                <td>{{ user.password }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+    {% if is_granted('ROLE_ADMIN') %}<a class="btn btn-primary" href="{{ path('user_index') }}"><i class="fas fa-reply"></i></a>{% endif %}
+    {% if is_granted('ROLE_SUPER_ADMIN') %}<a class="btn btn-warning" href="{{ path('user_edit', {'id': user.id}) }}"><i class="fas fa-pen"></i></a>{% endif %}
+    {{ include('user/_delete_form.html.twig') }}
+    </div>
+
+
+{% endblock %}

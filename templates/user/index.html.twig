@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'User index'|trans}}{% endblock %}
+
+{% block body %}
+    <h1>{{'User index'|trans}}</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{'Id'|trans}}</th>
+                <th>{{'Email'|trans}}</th>
+                <th>{{'Roles'|trans}}</th>
+                <th>{{'actions'|trans}}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+                <td>
+                    <a class="btn btn-primary" href="{{ path('user_show', {'id': user.id}) }}"><i class="fas fa-eye"></i></a>
+                    {% if is_granted('ROLE_ADMIN') %}<a class="btn btn-warning" href="{{ path('user_edit', {'id': user.id}) }}"><i class="fas fa-pen"></i></a>{% endif %}
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">{{'no records found'|trans}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% if is_granted('ROLE_SUPER_ADMIN') %}<a class="btn btn-success" href="{{ path('user_new') }}"><i class="fas fa-plus-square"></i></a>{% endif %}
+{% endblock %}

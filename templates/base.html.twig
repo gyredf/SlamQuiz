@@ -25,7 +25,7 @@
                     <a class="nav-link" href="{{ path('category_index') }}">{{'Category'|trans}}</a>
                 </li>
                 <li class="nav-item">
-                    {% if is_granted('ROLE_SUPER_ADMIN') %}<a class="nav-link">--ALL USER--</a>{% endif %}
+                    {% if is_granted('ROLE_SUPER_ADMIN') %}<a class="nav-link" href="{{ path('user_index') }}">Users list</a>{% endif %}
                 </li>
                 </ul>
 
