@@ -91,7 +91,7 @@
       </trans-unit>
       <trans-unit id="nWMiwfT" resname="Login">
         <source>Login</source>
-        <target>Connection</target>
+        <target>Connexion</target>
       </trans-unit>
       <trans-unit id="yKeA0.P" resname="Log in!">
         <source>Log in!</source>
@@ -115,11 +115,55 @@
       </trans-unit>
       <trans-unit id="v9QCsvb" resname="Sign in">
         <source>Sign in</source>
-        <target>Connection</target>
+        <target>Connexion</target>
       </trans-unit>
       <trans-unit id="0FJ_Sz1" resname="Logout">
         <source>Logout</source>
         <target>Déconnection</target>
+      </trans-unit>
+      <trans-unit id="RdEZaMh" resname="Need to evaluate you students?">
+        <source>Need to evaluate you students?</source>
+        <target>Besoin de vérifier la performance de vos élèves ?</target>
+      </trans-unit>
+      <trans-unit id="Qc.WQwC" resname="Here is the tool you need">
+        <source>Here is the tool you need</source>
+        <target>Voici l'outil qu'il vous faut !</target>
+      </trans-unit>
+      <trans-unit id="3nSbqtI" resname="Fonctionality">
+        <source>Fonctionality</source>
+        <target>Fonctionnalités</target>
+      </trans-unit>
+      <trans-unit id="Lzz1Nub" resname="Motivating interactive content">
+        <source>Motivating interactive content</source>
+        <target>Contenu interactif motivant</target>
+      </trans-unit>
+      <trans-unit id="YKQroPW" resname="Image support, automatic integration of social media">
+        <source>Image support, automatic integration of social media</source>
+        <target>Prise en charge des images, intégration automatique des médias sociaux</target>
+      </trans-unit>
+      <trans-unit id="4BSGn.I" resname="Automatic notation">
+        <source>Automatic notation</source>
+        <target>Notation automatique </target>
+      </trans-unit>
+      <trans-unit id="TRa.IKU" resname="Real-time activity tracking (receive student results by email)">
+        <source>Real-time activity tracking (receive student results by email)</source>
+        <target>Suivi d'activité en temps réel (recevez les résultats des élèves par email)</target>
+      </trans-unit>
+      <trans-unit id="Y.Ta.8n" resname="Test your students via a smartphone and deliver live results at a presentation">
+        <source>Test your students via a smartphone and deliver live results at a presentation</source>
+        <target>Testez vos élèves via un smartphone et fournissez des résultats en direct lors d'une présentation</target>
+      </trans-unit>
+      <trans-unit id="C_dyYI7" resname="Begin now">
+        <source>Begin now</source>
+        <target>Commençons maintenant</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>Créer un compte</target>
+      </trans-unit>
+      <trans-unit id="zH_R_dm" resname="Register free">
+        <source>Register free</source>
+        <target>Créer un compte gratuitement</target>
       </trans-unit>
     </body>
   </file>
