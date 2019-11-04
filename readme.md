@@ -13,6 +13,7 @@ Get files
 > cd slamquizz
 >
 > composer install
+
 **(If you don't have composer you can download here : https://getcomposer.org/download/)**
 
 Run
