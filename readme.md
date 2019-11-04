@@ -1,7 +1,7 @@
 Slam Quiz
 =========
 
-![Software interface](assets/screenshot_home.jpeg)
+![Software interface](assets/screenshot_home.jpg)
 
 Install
 =======
