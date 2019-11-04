@@ -10,8 +10,7 @@ Get files
 *For getting files*
 > git clone https://github.com/TotoLec/slamquiz.git
 >
-> composer install
-> - (If you don't have composer you can download here : https://getcomposer.org/download/)
+> composer install    (If you don't have composer you can download here : https://getcomposer.org/download/)
 
 Run
 ---
