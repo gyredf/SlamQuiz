@@ -8,11 +8,8 @@ Install
 Get files
 ---------
 *For getting files :*
-
 `git clone https://github.com/TotoLec/slamquiz.git`
-
 `cd slamquizz`
-
 `composer install`
 
 **If you don't have composer you can download here : https://getcomposer.org/download/**
@@ -45,7 +42,7 @@ Copy the .env file, paste it and rename .env.local
 
 Locate the file : src/Controller/DataFixtures/UserFixtures.php
 
-Change as you want your accounts
+Change as you want there accounts
 
 Run
 ---
