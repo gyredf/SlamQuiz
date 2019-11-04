@@ -40,6 +40,13 @@ Copy the .env file, paste it and rename .env.local
 >
 > **db_name :** Write the database name
 
+
+*accounts configuration*
+
+Locate the file : src/Controller/DataFixtures/UserFixtures.php
+
+Change as you want your accounts
+
 Run
 ---
 *When you got the files, you have to run the server by the command :*
