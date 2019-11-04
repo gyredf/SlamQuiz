@@ -17,6 +17,29 @@ Get files
 
 **If you don't have composer you can download here : https://getcomposer.org/download/**
 
+Configuration
+-------------
+
+*Database configuration :*
+
+Locate the file : .env
+
+> Find : DATABASE_URL=
+>
+> Put : DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
+
+Copy the .env file, paste it and rename .env.local
+
+> Find : DATABASE_URL=
+>
+> Put : DATABASE_URL=mysql://**db_user**:**db_password**@127.0.0.1:3306/**db_name**
+>
+> **db_user :** Write the user who have access to the database
+>
+> **db_password :** Write the password of the user who have access to the database
+>
+> **db_name :** Write the database name
+
 Run
 ---
 *When you got the files, you have to run the server by the command :*
