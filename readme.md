@@ -20,7 +20,7 @@ Get files
 Configuration
 -------------
 
-*Database configuration :*
+**Database configuration :**
 
 Locate the file : .env
 
@@ -41,7 +41,7 @@ Copy the .env file, paste it and rename .env.local
 > **db_name :** Write the database name
 
 
-*Accounts configuration*
+**Accounts configuration**
 
 Locate the file : src/Controller/DataFixtures/UserFixtures.php
 
