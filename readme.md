@@ -34,11 +34,11 @@ Copy the .env file, paste it and rename .env.local
 >
 > Put : DATABASE_URL=mysql://**db_user**:**db_password**@127.0.0.1:3306/**db_name**
 >
-> **db_user :** Write the user who have access to the database
+> **db_user :** Set the user who have access to the database
 >
-> **db_password :** Write the password of the user who have access to the database
+> **db_password :** Set the password of the user who have access to the database
 >
-> **db_name :** Write the database name
+> **db_name :** Set the database name
 
 
 **Accounts configuration :**
