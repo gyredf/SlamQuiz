@@ -24,7 +24,7 @@ Accounts
 *In this project you have already accounds with permissions, there are these accounts with an explication of the privileges*
 > Accounts :
 > 
->   User : He just have permission to see all mCQ and nothing else
+>   User : He just have permission to see all mCQ and nothing else.
 >   Password : Admin!
 >   
 >   Admin : He can View, Edit and Create a new mCQ
