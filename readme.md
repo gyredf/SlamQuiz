@@ -8,18 +8,16 @@ Install
 Get files
 ---------
 *For getting files*
-> `git clone https://github.com/TotoLec/slamquiz.git`
-> 
-> `cd slamquizz`
->
-> `composer install`
+`git clone https://github.com/TotoLec/slamquiz.git`
+`cd slamquizz`
+`composer install`
 
 **If you don't have composer you can download here : https://getcomposer.org/download/**
 
 Run
 ---
 *When you got the files, you have to run the server by the command :*
-> `php bin/console server:run`
+`php bin/console server:run`
 
 Index pages
 ============
