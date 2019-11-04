@@ -8,6 +8,7 @@ Install
 Get files
 ---------
 *For getting files*
+
 `git clone https://github.com/TotoLec/slamquiz.git`
 
 `cd slamquizz`
