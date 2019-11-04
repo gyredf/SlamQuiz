@@ -3,20 +3,25 @@ Slam Quiz
 
 ![Software interface](assets/screenshot_home.jpeg)
 
-#Install
-##Get files
+Install
+=======
+Get files
+---------
 *For getting files*
 > git clone https://github.com/TotoLec/slamquiz.git
 
-#Run
+Run
+---
 *When you got the files, you have to run the server*
 *By the command :*
 > php bin/console server:run
 
-#Index pages
+Index pages
+============
 *The index page of the software is: [localhost:8000](localhost:8000)*
 
-#Accounts
+Accounts
+========
 *In this project you have already accounds with permissions, there are these accounts with an explication of the privileges*
 > Accounts :
 > 
