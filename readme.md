@@ -9,8 +9,9 @@ Get files
 ---------
 *For getting files*
 > git clone https://github.com/TotoLec/slamquiz.git
+>
 > composer install
-> (If you don't have composer you can download here : https://getcomposer.org/download/)
+> - (If you don't have composer you can download here : https://getcomposer.org/download/)
 
 Run
 ---
@@ -29,10 +30,10 @@ Accounts
 >   - User : He just have permission to see all mCQ and nothing else
 >   - Password : Admin!
 >   
->   Admin : He can View, Edit and Create a new mCQ
->   Password : Admin!
+>   - Admin : He can View, Edit and Create a new mCQ
+>   - Password : Admin!
 >
->   Superadmin : He can View, Edit, Create and Delete an MCQ
->   Password : Admin!
+>   - Superadmin : He can View, Edit, Create and Delete an MCQ
+>   - Password : Admin!
 >
->   (Password is the same for everyone because it's for make the test more easy)
+>   - (Password is the same for everyone because it's for make the test more easy)
