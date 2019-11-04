@@ -12,13 +12,12 @@ Get files
 
 Run
 ---
-*When you got the files, you have to run the server*
-*By the command :*
+*When you got the files, you have to run the server by the command :*
 > php bin/console server:run
 
 Index pages
 ============
-*The index page of the software is: [localhost:8000](localhost:8000)*
+*The index page of the software is:* [localhost:8000](localhost:8000)
 
 Accounts
 ========
