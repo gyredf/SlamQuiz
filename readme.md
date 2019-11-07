@@ -11,7 +11,7 @@ Get files
 
 `git clone https://github.com/TotoLec/slamquiz.git`
 
-`cd slamquizz`
+`cd slamquiz`
 
 `composer install`
 
