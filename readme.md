@@ -47,6 +47,8 @@ Locate the file : src/Controller/DataFixtures/UserFixtures.php
 
 Change as you want there accounts
 
+And load it : `php bin/console doctrine:fixtures:load`
+
 Run
 ---
 *When you got the files, you have to run the server by the command :*
