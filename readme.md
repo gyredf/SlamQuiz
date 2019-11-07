@@ -43,7 +43,7 @@ Copy the .env file, paste it and rename .env.local
 
 **Accounts configuration :**
 
-Locate the file : src/Controller/DataFixtures/UserFixtures.php
+Locate the file : src/DataFixtures/UserFixtures.php
 
 Change as you want there accounts
 
