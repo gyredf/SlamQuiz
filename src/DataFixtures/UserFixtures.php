@@ -23,7 +23,7 @@ class UserFixtures extends Fixture
 
         //Super Admin
         $user = new User();
-        $user->setEmail('thlecacheux@gmail.com');
+        $user->setEmail('superadmin@gmail.com');
         $user->setRoles(['ROLE_SUPER_ADMIN']);
         $user->setPassword('$argon2id$v=19$m=65536,t=4,p=1$eWJZdnFlRFNqZXR2Mmp0Mw$5OixuVBelrXn0ipK2O3iQnjtD55yo0JCAMl8aXSw2oU');
         $manager->persist($user);
