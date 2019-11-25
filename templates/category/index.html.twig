@@ -11,7 +11,7 @@
                 <th>{{'Id'|trans}}</th>
                 <th>{{'Shortname'|trans}}</th>
                 <th>{{'Longname'|trans}}</th>
-                <th>{{'actions'|trans}}</th>
+                {% if app.user %}<th>{{'actions'|trans}}</th>{% endif %}
             </tr>
         </thead>
         <tbody>
