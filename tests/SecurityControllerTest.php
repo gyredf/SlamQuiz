@@ -21,7 +21,6 @@ class SecurityControllerTest extends WebTestCase
     {
         // Request /login 
         $this->client->request('GET', '/login');
-        $crawler = $this->client->request('GET', '/login');
 
         // Asserts that /login path exists and don't return an error
         $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
@@ -60,6 +59,21 @@ class SecurityControllerTest extends WebTestCase
         /*
         Ecrire ici le code pour vérifier la présence du champ de formulaire password dans le contenu de la réponse HTTP  
         c'est à dire affirmer que le contenu de la réponse contient '<input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>'
+        */
+        
+    }
+
+    public function testNotShowUser()
+    {
+        // Request /user
+        $this->client->request('GET', '/user');
+
+        $this->assertEquals(302, $this->client->getResponse()->getStatusCode());
+        // Asserts that category path move to another path (login)
+        /* 
+        Ecrire ici le code pour vérifier que, si l'utilisateur n'est pas connecté, 
+        la requête '/category' renvoie vers une autre page (la page /login)
+        c'est à dire affirmer que le code de statut de la réponse est égale à 301 (Response::HTTP_MOVED_PERMANENTLY)
         */
         
     }
