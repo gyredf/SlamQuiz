@@ -20,6 +20,7 @@ class CategoryController extends AbstractController
      */
     public function index(CategoryRepository $categoryRepository): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
         return $this->render('category/index.html.twig', [
             'categories' => $categoryRepository->findAll(),
         ]);
@@ -29,7 +30,7 @@ class CategoryController extends AbstractController
      * @Route("/new", name="category_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
-    {
+    {        
         $category = new Category();
         $form = $this->createForm(CategoryType::class, $category);
         $form->handleRequest($request);
@@ -41,7 +42,7 @@ class CategoryController extends AbstractController
 
             return $this->redirectToRoute('category_index');
         }
-
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         return $this->render('category/new.html.twig', [
             'category' => $category,
             'form' => $form->createView(),
@@ -72,6 +73,7 @@ class CategoryController extends AbstractController
             return $this->redirectToRoute('category_index');
         }
 
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         return $this->render('category/edit.html.twig', [
             'category' => $category,
             'form' => $form->createView(),
