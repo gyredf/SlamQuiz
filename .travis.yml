@@ -2,9 +2,11 @@ language: php
 php:
   - 7.3.5
 services:
-  - mysql
-before_script:
-  - cp app/config/parameters.yml.travis app/config/parameters.yml
+  - postgresql
+env:
+  - db_user=root
+  - db_name=slamquiz
+  - db_password=
 scripts:
   - composer install
   - composer require --dev symfony/phpunit-bridge
