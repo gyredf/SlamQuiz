@@ -2,7 +2,7 @@ language: php
 php:
   - 7.3.5
 services:
-  - pgsql
+  - mysql
 scripts:
   - composer install
   - composer require --dev symfony/phpunit-bridge
