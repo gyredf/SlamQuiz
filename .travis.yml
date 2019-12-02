@@ -4,9 +4,10 @@ php:
 services:
   - postgresql
 env:
-  - db_user=slamquiz
-  - db_name=slamquiz
-  - db_password=Admin!
+  global:
+    - db_user=slamquiz
+    - db_name=slamquiz
+    - db_password=Admin!
 scripts:
   - composer install
   - composer require --dev symfony/phpunit-bridge
