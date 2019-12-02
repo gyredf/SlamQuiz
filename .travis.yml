@@ -2,12 +2,12 @@ language: php
 
 php:
   - 7.3.5
-before_cache:
-  - sudo chown -R travis:travis $HOME/.cargo
-  - sudo chown -R travis:travis $TRAVIS_BUILD_DIR/target
+cache:
+    directories:
+        - $HOME/.composer/cache
+        - $HOME/symfony-bridge/.phpunit
 scripts:
   - composer install
   - composer require --dev symfony/phpunit-bridge
-  - php bin/console doctrine:fixtures:load
-  - yes
+  - php bin/console doctrine:fixtures:load -y
   # - ./bin/phpunit
