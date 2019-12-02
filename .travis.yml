@@ -1,50 +1,71 @@
 language: php
-sudo: false
-
-cache:
-  yarn: true
-  directories:
-    - $HOME/.composer/cache/files
-    - ./bin/.phpunit
-
-env:
-  global:
-    - SYMFONY_PHPUNIT_DIR=./bin/.phpunit
-    - SYMFONY_DEPRECATIONS_HELPER=0
-    - ACTION="install"
-
+# Versions of PHP you want your project run with.
+php:
+ - 5.5
+ - 5.6
+ - 7.0
+ - 7.1
+ - 7.2
+ - 7.3.5
+ - hhvm
+# Commands to be run before your environment runs.
+before_script:
+ - composer self-update
+ - composer install --prefer-source --no-interaction --dev
+# Commands you want to run that will verify your build.
+script: phpunit
+# allow_failures: Allow this build to fail under the specified environments.
+# fast_finish: If your build fails do not continue trying to build, just stop.
 matrix:
-  fast_finish: true
-  include:
-    - php: 7.2
-    - php: 7.3.5
-      env: SYMFONY="5.0.*"
-           ACTION="update"
-    # 'php: nightly' is PHP 8.0
-    - php: 7.4snapshot
-  allow_failures:
-    - php: 7.4snapshot
-
+ allow_failures:
+   - php: 5.6
+   - php: hhvm
+ fast_finish: true
+# Customize when the notification emails are sent.
+notifications:
+   on_success: never
+   on_failure: always
+Here I’ve added the PHP versions that are allowed for the projects.
+before_script allows you to run command before the environment actually executes.
+allow_failures contains the conditions that allow your build to fail.
+notifications will notify you in all scenarios of build success or failure.
+If you are using Symfony 3, you can add this script provided by Antonio Jiménez
+# Project language
+language: php
+# Allows use container-based infrastructure
+sudo: false
+# Start mysql service
+services:
+ - pgsql
+# Cache composer packages so "composer install" is faster
+cache:
+ directories:
+   - $HOME/.composer/cache/files
+# Matrix to test in every php version
+matrix:
+ # Fast finish allows to set the build as "finished" even if the "allow_failures" matrix elements are not finished yet.
+ fast_finish: true
+ include:
+   - php: 5.5
+   - php: 5.6
+   - php: 7.0
+   - php: hhvm
+ allow_failures:
+   - php: hhvm
+# Define an environment variable
+env:
+ - SYMFONY_VERSION="3.0.*" DB=pgsql
+# Update composer
+before-install:
+ - composer self-update
+# Install composer dependencies,
+# Create database, schema and fixtures
 install:
-  - composer install
-  - ./bin/phpunit install
-
+ - composer install
+ - php bin/console doctrine:database:create --env=test
+ - php bin/console doctrine:schema:create --env=test
+ - php bin/console doctrine:fixtures:load -n --env=test
+# Run script
 script:
-  # - ./bin/phpunit
-  # # this checks that the source code follows the Symfony Code Syntax rules
-  # - '[[ "$TRAVIS_PHP_VERSION" == "7.4snapshot" ]] || ./vendor/bin/php-cs-fixer fix --diff --dry-run -v'
-  # # this checks that the YAML config files contain no syntax errors
-  # - ./bin/console lint:yaml config --parse-tags
-  # # this checks that the Twig template files contain no syntax errors
-  # - ./bin/console lint:twig templates --env=prod
-  # # this checks that the XLIFF translations contain no syntax errors
-  # - ./bin/console lint:xliff translations
-  # # this checks that arguments injected into services match type declarations
-  # - ./bin/console lint:container
-  # # TODO: replace the old security checker by the new checker provided by the 'symfony' binary
-  # # this checks that the application doesn't use dependencies with known security vulnerabilities
-  # #- ./bin/console security:check
-  # # this checks that Doctrine's mapping configurations are valid
-  # - ./bin/console doctrine:schema:validate --skip-sync -vvv --no-interaction
-  # #  Fail CI if the repo is in a dirty state after building assets (only for current release ie install)
-  # #-  if [[ "$ACTION" == "install" ]]; then yarn install && yarn encore production && git add --all && git diff --staged --exit-code; fi
+ - phpunit
+# After a build, send email notification with the build results
