@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TotoLec/slamquiz.svg?branch=master)](https://travis-ci.org/TotoLec/slamquiz)
+=========
 Slam Quiz
 =========
 
