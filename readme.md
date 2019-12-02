@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TotoLec/slamquiz.svg?branch=master)](https://travis-ci.org/TotoLec/slamquiz)
+=========
 Slam Quiz
 =========
 
@@ -11,7 +13,7 @@ Get files
 
 `git clone https://github.com/TotoLec/slamquiz.git`
 
-`cd slamquizz`
+`cd slamquiz`
 
 `composer install`
 
@@ -43,9 +45,12 @@ Copy the .env file, paste it and rename .env.local
 
 **Accounts configuration :**
 
-Locate the file : src/Controller/DataFixtures/UserFixtures.php
+Locate the file : src/DataFixtures/UserFixtures.php
 
 Change as you want there accounts
+
+And load it : `php bin/console doctrine:fixtures:load`
+    Enter : yes
 
 Run
 ---
