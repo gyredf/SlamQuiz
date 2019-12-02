@@ -9,7 +9,7 @@ env:
     - db_name=slamquiz
     - db_password=Admin!
 before_script:
-  - psql -c 'create database slamquizz;' -U postgres
+  - psql -c 'create database slamquiz;' -U postgres
 scripts:
   - composer install
   - composer require --dev symfony/phpunit-bridge
