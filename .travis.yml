@@ -14,7 +14,6 @@ before_script:
 scripts:
   - composer install
   # - composer require --dev symfony/phpunit-bridge
-  - php bin/console doctrine:database:create --env=test
   - php bin/console doctrine:schema:update --force --env=test
   - php bin/console doctrine:fixtures:load -n --env=test
   # - php bin/phpunit
