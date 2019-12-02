@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="fr-FR" target-language="fr" datatype="plaintext" original="file.ext">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -188,6 +188,10 @@
       <trans-unit id="tRLZfny" resname="User">
         <source>User</source>
         <target>Utilisateurs</target>
+      </trans-unit>
+      <trans-unit id="JU0yZ4o" resname="Welcome on SlamQuiz">
+        <source>Welcome on SlamQuiz</source>
+        <target>Bienvenue sur SlamQuiz</target>
       </trans-unit>
     </body>
   </file>
