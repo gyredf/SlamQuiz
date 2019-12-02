@@ -2,8 +2,6 @@ language: php
 
 php:
   - 7.3.5
-before_install:
-  - chmod +x .travis.yml
 scripts:
   - composer install
   - composer require --dev symfony/phpunit-bridge
