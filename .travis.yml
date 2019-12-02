@@ -4,4 +4,5 @@ php:
   - 7.3.5
 scripts:
   - composer install
- 
+  - composer require --dev symfony/phpunit-bridge
+  - ./bin/phpunit
