@@ -11,6 +11,7 @@
                 <th>Id</th>
                 <th>{{'Text'|trans}}</th>
                 <th>{{'Correct'|trans}}</th>
+                <th>{{'Question'|trans}}</th>
                 <th>{{'actions'|trans}}</th>
             </tr>
         </thead>
@@ -19,7 +20,12 @@
             <tr>
                 <td>{{ answer.id }}</td>
                 <td>{{ answer.text }}</td>
-                <td>{{ answer.correct }}</td>
+                <td>{{ answer.correction }}</td>
+                <td>
+                {% for quest in answer.question %}
+                    {{ quest.text }}
+                {% endfor %}
+                </td>
                 <td>
                     {% if is_granted('ROLE_ADMIN') %}<a class="btn btn-primary" href="{{ path('answer_show', {'id': answer.id}) }}">{{'show'|trans}}</a>{% endif %}
                     {% if is_granted('ROLE_ADMIN') %}<a class="btn btn-warning" href="{{ path('answer_edit', {'id': answer.id}) }}">{{'edit'|trans}}</a>{% endif %}
