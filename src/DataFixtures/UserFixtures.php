@@ -25,21 +25,21 @@ class UserFixtures extends Fixture
         $user = new User();
         $user->setEmail('superadmin@gmail.com');
         $user->setRoles(['ROLE_SUPER_ADMIN']);
-        $user->setPassword('$argon2id$v=19$m=65536,t=4,p=1$eWJZdnFlRFNqZXR2Mmp0Mw$5OixuVBelrXn0ipK2O3iQnjtD55yo0JCAMl8aXSw2oU');
+        $user->setPassword('$argon2id$v=19$m=65536,t=4,p=1$REZWSlgzRmNmSUxzaE1Vag$1TBn2gh9SY1FpVYCsPzr8pGLqshU2g9SWe/uD4LeQF0');
         $manager->persist($user);
         
         //Admin
         $user = new User();
         $user->setEmail('admin@gmail.com');
         $user->setRoles(['ROLE_ADMIN']);
-        $user->setPassword('$argon2id$v=19$m=65536,t=4,p=1$eWJZdnFlRFNqZXR2Mmp0Mw$5OixuVBelrXn0ipK2O3iQnjtD55yo0JCAMl8aXSw2oU');
+        $user->setPassword('$argon2id$v=19$m=65536,t=4,p=1$REZWSlgzRmNmSUxzaE1Vag$1TBn2gh9SY1FpVYCsPzr8pGLqshU2g9SWe/uD4LeQF0');
         $manager->persist($user);
         
         //User
         $user = new User();
         $user->setEmail('user@gmail.com');
         $user->setRoles(['ROLE_USER']);
-        $user->setPassword('$argon2id$v=19$m=65536,t=4,p=1$eWJZdnFlRFNqZXR2Mmp0Mw$5OixuVBelrXn0ipK2O3iQnjtD55yo0JCAMl8aXSw2oU');
+        $user->setPassword('$argon2id$v=19$m=65536,t=4,p=1$REZWSlgzRmNmSUxzaE1Vag$1TBn2gh9SY1FpVYCsPzr8pGLqshU2g9SWe/uD4LeQF0');
         $manager->persist($user);
 
         $manager->flush();
