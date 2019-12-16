@@ -23,13 +23,6 @@ class AnswerType extends AbstractType
                     'Vrai'  => '1',
                 ],
             ])
-            ->add('question', EntityType::class, [
-                'class' => Question::class,
-                'query_builder' => function (EntityRepository $er) {
-                    return $er->createQueryBuilder('u');
-                },
-                'choice_label' => 'text',
-            ]);
         ;
     }
 

@@ -35,5 +35,11 @@
         </tbody>
     </table>
 
-    <a class="btn btn-success" href="{{ path('question_new') }}"><i class="fas fa-plus-square"></i></a>
+    {# <a class="btn btn-success" href="{{ path('question_new') }}"><i class="fas fa-plus-square"></i></a> #}
+    <div class="btn-group">
+        <div class="btn bg-primary text-white">Create with :</div>
+        <a class="btn btn-success" href="{{ path('question_new', {'nb': 2}) }}"> 2 answers</a>
+        <a class="btn btn-success" href="{{ path('question_new', {'nb': 3}) }}"> 3 answers</a>
+        <a class="btn btn-success" href="{{ path('question_new', {'nb': 4}) }}"> 4 answers</a>
+    </div>
 {% endblock %}

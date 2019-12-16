@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Question;
 use App\Entity\Category;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Doctrine\ORM\EntityRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -24,6 +25,12 @@ class QuestionType extends AbstractType
                 },
                 'choice_label' => 'shortname',
             ]);
+            $builder->add('answers', CollectionType::class, array(
+                'entry_type' => AnswerType::class,
+                'entry_options' => array(
+                    'label' => false,
+                )
+            ));
         ;
     }
 
