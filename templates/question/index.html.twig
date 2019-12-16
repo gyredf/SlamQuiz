@@ -8,7 +8,6 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>{{'Text'|trans}}</th>
                 <th>{{'Created_at'|trans}}</th>
                 <th>{{'Updated_at'|trans}}</th>
@@ -18,7 +17,6 @@
         <tbody>
         {% for question in questions %}
             <tr>
-                <td>{{ question.id }}</td>
                 <td>{{ question.text }}</td>
                 <td>{{ question.createdAt ? question.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ question.updatedAt ? question.updatedAt|date('Y-m-d H:i:s') : '' }}</td>

@@ -8,7 +8,6 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>{{'Text'|trans}}</th>
                 <th>{{'Correct'|trans}}</th>
                 <th>{{'Question'|trans}}</th>
@@ -18,7 +17,6 @@
         <tbody>
         {% for answer in answers %}
             <tr>
-                <td>{{ answer.id }}</td>
                 <td>{{ answer.text }}</td>
                 <td>{{ answer.correction }}</td>
                 <td>

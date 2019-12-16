@@ -43,6 +43,7 @@ class Question
      * @ORM\OneToMany(targetEntity="App\Entity\Answer", mappedBy="question")
      */
     private $answers;
+    
 
     public function __construct()
     {
