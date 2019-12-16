@@ -193,6 +193,90 @@
         <source>Welcome on SlamQuiz</source>
         <target>Bienvenue sur SlamQuiz</target>
       </trans-unit>
+      <trans-unit id="nVRn3MP" resname="Edit Answer">
+        <source>Edit Answer</source>
+        <target>Modification de la question</target>
+      </trans-unit>
+      <trans-unit id="U0M9PNE" resname="back to list">
+        <source>back to list</source>
+        <target>Retour</target>
+      </trans-unit>
+      <trans-unit id="VSfIL5D" resname="Answer index">
+        <source>Answer index</source>
+        <target>Réponses</target>
+      </trans-unit>
+      <trans-unit id="cZiMTY4" resname="Text">
+        <source>Text</source>
+        <target>Texte</target>
+      </trans-unit>
+      <trans-unit id="rKAaGjo" resname="Correct">
+        <source>Correct</source>
+        <target>Correction</target>
+      </trans-unit>
+      <trans-unit id="HGMzUJ3" resname="show">
+        <source>show</source>
+        <target>voir</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>edition</target>
+      </trans-unit>
+      <trans-unit id="GP3VSbL" resname="New">
+        <source>New</source>
+        <target>nouveaux</target>
+      </trans-unit>
+      <trans-unit id="n8b.YPP" resname="New Answer">
+        <source>New Answer</source>
+        <target>nouvelle réponse</target>
+      </trans-unit>
+      <trans-unit id="qBTARCG" resname="Create new Answer">
+        <source>Create new Answer</source>
+        <target>Créer une nouvelle réponse</target>
+      </trans-unit>
+      <trans-unit id="sqOqYCd" resname="Answer">
+        <source>Answer</source>
+        <target>Réponses</target>
+      </trans-unit>
+      <trans-unit id="4tClSWj" resname="Delete">
+        <source>Delete</source>
+        <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="FQn1YfJ" resname="Save">
+        <source>Save</source>
+        <target>Sauvegarder</target>
+      </trans-unit>
+      <trans-unit id="nibTd3r" resname="Edit Question">
+        <source>Edit Question</source>
+        <target>Modification question</target>
+      </trans-unit>
+      <trans-unit id="2p1awvt" resname="Question index">
+        <source>Question index</source>
+        <target>Questions</target>
+      </trans-unit>
+      <trans-unit id="S9iCKr8" resname="Created_at">
+        <source>Created_at</source>
+        <target>Crée à</target>
+      </trans-unit>
+      <trans-unit id="0Y.II8I" resname="Updated_at">
+        <source>Updated_at</source>
+        <target>Modifié à</target>
+      </trans-unit>
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>Nouvelle question</target>
+      </trans-unit>
+      <trans-unit id="zI7aMg3" resname="New Question">
+        <source>New Question</source>
+        <target>Nouvelle Question</target>
+      </trans-unit>
+      <trans-unit id="E2JqnxS" resname="Create new Question">
+        <source>Create new Question</source>
+        <target>Créer une nouvelle question</target>
+      </trans-unit>
+      <trans-unit id="KJr.ErB" resname="Question">
+        <source>Question</source>
+        <target>Questions</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
