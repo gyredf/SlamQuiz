@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/TotoLec/slamquiz.svg?branch=master)](https://travis-ci.org/TotoLec/slamquiz)
+[![Build Status](https://travis-ci.org/TotoLec/slamquiz.svg?branch=master)](https://travis-ci.org/levesam/slamquiz)  
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 =========
 Slam Quiz
 =========
