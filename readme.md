@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/TotoLec/slamquiz.svg?branch=master)](https://travis-ci.org/TotoLec/slamquiz)
+ 
+[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 =========
 Slam Quiz
 =========
@@ -77,3 +79,7 @@ Accounts
 >>   - Password : Admin!
 >
 >   - (Password is the same for everyone because it's for make the test more easy)
+
+Demo
+====
+[frozen-beach-47030.herokuapp.com](https://frozen-beach-47030.herokuapp.com/)
