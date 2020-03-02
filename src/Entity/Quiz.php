@@ -2,6 +2,9 @@
 
 namespace App\Entity;
 
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -46,6 +49,11 @@ class Quiz
      * @ORM\Column(type="datetime")
      */
     private $updated_at;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="quizzes")
+     */
+    private $categories;
 
     public function getId(): ?int
     {
@@ -123,4 +131,25 @@ class Quiz
 
         return $this;
     }
+
+    public function __construct()
+    {
+        $this->quiz = new ArrayCollection();
+        $this->setCreatedAt(new \DateTime());
+        $this->setUpdatedAt(new \DateTime());
+    }
+
+    public function getCategories(): ?Category
+    {
+        return $this->categories;
+    }
+
+    public function setCategories(?Category $categories): self
+    {
+        $this->categories = $categories;
+
+        return $this;
+    }
+
+    //public function construct(){}
 }

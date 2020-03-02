@@ -32,6 +32,9 @@
                             <a class="nav-link" href="{{ path('question_index') }}">{{'Question'|trans}}</a>
                         {% endif %}
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if '/quiz/' in app.request.server.get('REQUEST_URI') %} active {% endif %}" href="{{ path('quiz_index') }}">{{'Quiz'|trans}}</a>
+                    </li>
                 </ul>
 
                 <ul class="navbar-nav float-right">
